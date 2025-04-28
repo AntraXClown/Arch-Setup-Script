@@ -202,7 +202,7 @@ output 'Installing the base system (it may take a while).'
 pacstrap /mnt apparmor base git base-devel efibootmgr grub grub-btrfs \
   inotify-tools linux-firmware linux-zen linux-zen-headers amd-ucode neovim \
   reflector snapper snap-pac sudo zram-generator bash networkmanager \
-  pipewire-alsa pipewire-pulse pipewire-jack openssh chrony
+  pipewire-alsa pipewire-pulse pipewire-jack openssh chrony duf gdu
 
 ## Generate /etc/fstab
 output 'Generating a new fstab.'
