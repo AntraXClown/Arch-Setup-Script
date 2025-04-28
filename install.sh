@@ -109,7 +109,7 @@ sgdisk --zap-all "${disk}"
 ## Creating a new partition scheme
 output "Creating new partition scheme on ${disk}."
 sgdisk -g "${disk}"
-sgdisk -I -n 1:0:+1G -t 1:ef00 -c 1:'ESP' "${disk}"
+sgdisk -I -n 1:0:+512M -t 1:ef00 -c 1:'ESP' "${disk}"
 sgdisk -I -n 2:0:0 -c 2:'rootfs' "${disk}"
 
 ## Informing the Kernel of the changes
