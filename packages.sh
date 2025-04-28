@@ -44,7 +44,7 @@ PACKAGES=(
   cmake visual-studio-code-bin
 
   # nvidia
-  nvidia-container-toolkit nvidia-settings
+  # nvidia-container-toolkit nvidia-settings
 
   # Python
   uv python-pynvim python-virtualenv python-rich
