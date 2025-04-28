@@ -106,23 +106,26 @@ sgdisk --zap-all "${disk}"
 ## Creating a new partition scheme
 output "Creating new partition scheme on ${disk}."
 sgdisk -g "${disk}"
-sgdisk -I -n 1:0:+512M -t 1:ef00 -c 1:'ESP' "${disk}"
+sgdisk -I -n 1:0:+1G -t 1:ef00 -c 1:'ESP' "${disk}"
 sgdisk -I -n 2:0:0 -c 2:'rootfs' "${disk}"
 
 ## Informing the Kernel of the changes
 output 'Informing the Kernel about the disk changes.'
 partprobe "${disk}"
 
+
+ESP=eval(`lsblk -no KNAME /dev/nvme0n1 | awk 'NR==2'`)
+echo "ESP Partition: ${ESP}"
 ## Formatting the ESP as FAT32
 output 'Formatting the EFI Partition as FAT32.'
-mkfs.fat -F 32 -s 2 '/dev/disk/by-partlabel/ESP'
+mkfs.fat -F 32 -s 2 $ESP
 
-## Formatting the partition as BTRFS
-output 'Formatting the rootfs as BTRFS.'
-BTRFS='/dev/disk/by-partlabel/rootfs'
-mkfs.btrfs -f "${BTRFS}"
-mount "${BTRFS}" /mnt
-
+### Formatting the partition as BTRFS
+#output 'Formatting the rootfs as BTRFS.'
+#BTRFS='/dev/disk/by-partlabel/rootfs'
+#mkfs.btrfs -f "${BTRFS}"
+#mount "${BTRFS}" /mnt
+#
 ### Creating BTRFS subvolumes
 #output 'Creating BTRFS subvolumes.'
 #
