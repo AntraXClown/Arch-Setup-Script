@@ -249,11 +249,6 @@ sed -i 's/rootflags=subvol=${rootsubvol}//g' /mnt/etc/grub.d/20_linux_xen
 sed -i "s#quiet#root=${BTRFS}#g" /mnt/etc/default/grub
 
 
-
-## Remove nullok from system-auth
-sed -i 's/nullok//g' /mnt/etc/pam.d/system-auth
-
-
 ## Configuring the system
 arch-chroot /mnt /bin/bash -e <<EOF
 
@@ -272,7 +267,7 @@ arch-chroot /mnt /bin/bash -e <<EOF
     mkinitcpio -P
 
     # Installing GRUB
-    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --disable-shim-lock
+    grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 
     # Creating grub config file
     grub-mkconfig -o /boot/grub/grub.cfg
@@ -295,7 +290,7 @@ EOF
 [ -n "$username" ] && echo "Setting user password for ${username}." && echo -e "${user_password}\n${user_password}" | arch-chroot /mnt passwd "$username"
 
 ## Give wheel user sudo access.
-sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/g' /mnt/etc/sudoers
+sed -i 's/# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/g' /mnt/etc/sudoers
 
 ## Enable services
 systemctl enable chronyd --root=/mnt
