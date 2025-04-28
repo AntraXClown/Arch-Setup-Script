@@ -74,17 +74,8 @@ user_password_prompt() {
 }
 
 hostname_prompt() {
-  if [ "${install_mode}" = 'server' ]; then
-    output 'Enter your hostname:'
-    read -r hostname
-
-    if [ -z "${hostname}" ]; then
-      output 'You need to enter a hostname.'
-      hostname_prompt
-    fi
-  else
-    hostname='localhost'
-  fi
+  output 'Enter your hostname:'
+  read -r hostname
 }
 
 # Set hardcoded variables (temporary, these will be replaced by future prompts)
