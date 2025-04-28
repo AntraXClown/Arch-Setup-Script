@@ -28,6 +28,9 @@ PACKAGES=(
   # mouse mx master 3s
   solaar
 
+  # btrfs
+  snapper-support
+
   # hyprland
   sddm hyprland-meta-git
 
