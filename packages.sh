@@ -28,8 +28,11 @@ PACKAGES=(
   # mouse mx master 3s
   solaar
 
+  # hyprland
+  sddm hyprland-meta-git
+
   # meus apps aur
-  pypi2aur hyprtiler py-nvfan hyprpwmenu hyprnav dockmate
+  pypi2aur hyprtiler hyprpwmenu hyprnav
 
   # nemo filemanager
   nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter
