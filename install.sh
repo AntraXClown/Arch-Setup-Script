@@ -121,6 +121,7 @@ mkfs.fat -F 32 -s 2 "${ESP}"
 
 ## Formatting the partition as BTRFS
 output 'Formatting the rootfs as BTRFS.'
+BTRFS='/dev/disk/by-partlabel/rootfs'
 mkfs.btrfs -f "${BTRFS}"
 mount "${BTRFS}" /mnt
 
