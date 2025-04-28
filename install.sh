@@ -191,7 +191,7 @@ mount -o ssd,noatime,compress=zstd,nodatacow,nodev,nosuid,noexec,subvol=@/var_li
 mount -o ssd,noatime,compress=zstd,nodatacow,nodev,nosuid,noexec,subvol=@/var_lib_machines "${BTRFS}" /mnt/var/lib/machines
 
 mkdir -p /mnt/boot/efi
-mount -o nodev,nosuid,noexec "${ESP}" /mnt/boot/efi
+mount -o nodev,nosuid,noexec "/dev/${ESP}" /mnt/boot/efi
 
 ## Pacstrap
 output 'Installing the base system (it may take a while).'
