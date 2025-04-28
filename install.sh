@@ -113,8 +113,7 @@ sgdisk -I -n 2:0:0 -c 2:'rootfs' "${disk}"
 output 'Informing the Kernel about the disk changes.'
 partprobe "${disk}"
 
-
-ESP=eval(`lsblk -no KNAME /dev/nvme0n1 | awk 'NR==2'`)
+ESP=$(lsblk -no KNAME /dev/nvme0n1 | awk 'NR==2')
 echo "ESP Partition: ${ESP}"
 ## Formatting the ESP as FAT32
 output 'Formatting the EFI Partition as FAT32.'
