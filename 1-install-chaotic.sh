@@ -2,7 +2,7 @@
 
 source functions.sh
 
-echo "Install virt-manager"
+echo "Enable Chaotic-AUR repository..."
 enableChaoticAur
 
 sudo cp pacman.conf /etc/pacman.conf
