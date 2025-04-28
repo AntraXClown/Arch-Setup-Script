@@ -23,10 +23,6 @@ output() {
   printf '\e[1;34m%-6s\e[m\n' "${@}"
 }
 
-unpriv() {
-  sudo -u nobody "$@"
-}
-
 installation_date=$(date "+%Y-%m-%d %H:%M:%S")
 
 disk_prompt() {
@@ -199,7 +195,7 @@ mount -o nodev,nosuid,noexec "/dev/${ESP}" /mnt/boot/efi
 ## Pacstrap
 output 'Installing the base system (it may take a while).'
 
-pacstrap /mnt apparmor base git base-devel efibootmgr grub grub-btrfs \
+pacstrap /mnt base git base-devel efibootmgr grub grub-btrfs \
   inotify-tools linux-firmware linux-zen linux-zen-headers amd-ucode neovim \
   reflector snapper snap-pac sudo zram-generator bash networkmanager \
   pipewire-alsa pipewire-pulse pipewire-jack openssh chrony duf gdu
@@ -250,36 +246,13 @@ GRUB_BTRFS_OVERRIDE_BOOT_PARTITION_DETECTION=true' >>/mnt/etc/default/grub
 sed -i 's/rootflags=subvol=${rootsubvol}//g' /mnt/etc/grub.d/20_linux_xen
 
 ## Kernel hardening
-sed -i "s#quiet#root=${BTRFS} lsm=landlock,lockdown,yama,integrity,apparmor,bpf mitigations=auto,nosmt spectre_v2=on spectre_bhi=on spec_store_bypass_disable=on tsx=off kvm.nx_huge_pages=force nosmt=force l1d_flush=on spec_rstack_overflow=safe-ret gather_data_sampling=force reg_file_data_sampling=on random.trust_bootloader=off random.trust_cpu=off intel_iommu=on amd_iommu=force_isolation efi=disable_early_pci_dma iommu=force iommu.passthrough=0 iommu.strict=1 slab_nomerge init_on_alloc=1 init_on_free=1 pti=on vsyscall=none ia32_emulation=0 page_alloc.shuffle=1 randomize_kstack_offset=on debugfs=off lockdown=confidentiality module.sig_enforce=1#g" /mnt/etc/default/grub
+sed -i "s#quiet#root=${BTRFS}#g" /mnt/etc/default/grub
 
-## Continue kernel hardening
-unpriv curl -s https://raw.githubusercontent.com/secureblue/secureblue/live/files/system/etc/modprobe.d/blacklist.conf | tee /mnt/etc/modprobe.d/blacklist.conf >/dev/null
-unpriv curl -s https://raw.githubusercontent.com/TommyTran732/Linux-Setup-Scripts/main/etc/sysctl.d/99-server.conf | tee /mnt/etc/sysctl.d/99-server.conf >/dev/null
 
-## Setup NTS
-unpriv curl -s https://raw.githubusercontent.com/GrapheneOS/infrastructure/refs/heads/main/etc/chrony.conf | tee /mnt/etc/chrony.conf >/dev/null
-mkdir -p /mnt/etc/sysconfig
-unpriv curl -s https://raw.githubusercontent.com/TommyTran732/Linux-Setup-Scripts/main/etc/sysconfig/chronyd | tee /mnt/etc/sysconfig/chronyd >/dev/null
 
 ## Remove nullok from system-auth
 sed -i 's/nullok//g' /mnt/etc/pam.d/system-auth
 
-## Harden SSH
-## Arch annoyingly does not split openssh-server out so even desktop Arch will have the daemon
-
-## Disable coredump
-mkdir -p /mnt/etc/security/limits.d/
-unpriv curl -s https://raw.githubusercontent.com/TommyTran732/Linux-Setup-Scripts/main/etc/security/limits.d/30-disable-coredump.conf | tee /mnt/etc/security/limits.d/30-disable-coredump.conf >/dev/null
-mkdir -p /mnt/etc/systemd/coredump.conf.d
-unpriv curl -s https://raw.githubusercontent.com/TommyTran732/Linux-Setup-Scripts/main/etc/systemd/coredump.conf.d/disable.conf | tee /mnt/etc/systemd/coredump.conf.d/disable.conf >/dev/null
-
-## ZRAM configuration
-unpriv curl -s https://raw.githubusercontent.com/TommyTran732/Linux-Setup-Scripts/main/etc/systemd/zram-generator.conf | tee /mnt/etc/systemd/zram-generator.conf >/dev/null
-
-## Setup Networking
-
-mkdir -p /mnt/etc/systemd/system/NetworkManager.service.d/
-unpriv curl -s https://gitlab.com/divested/brace/-/raw/master/brace/usr/lib/systemd/system/NetworkManager.service.d/99-brace.conf | tee /mnt/etc/systemd/system/NetworkManager.service.d/99-brace.conf >/dev/null
 
 ## Configuring the system
 arch-chroot /mnt /bin/bash -e <<EOF
@@ -325,7 +298,6 @@ EOF
 sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/g' /mnt/etc/sudoers
 
 ## Enable services
-systemctl enable apparmor --root=/mnt
 systemctl enable chronyd --root=/mnt
 systemctl enable fstrim.timer --root=/mnt
 systemctl enable grub-btrfsd.service --root=/mnt
@@ -337,10 +309,6 @@ systemctl disable systemd-timesyncd --root=/mnt
 systemctl enable NetworkManager --root=/mnt
 systemctl enable sshd --root=/mnt
 
-## Set umask to 077.
-sed -i 's/^UMASK.*/UMASK 077/g' /mnt/etc/login.defs
-sed -i 's/^HOME_MODE/#HOME_MODE/g' /mnt/etc/login.defs
-sed -i 's/umask 022/umask 077/g' /mnt/etc/bash.bashrc
 
 # Finish up
 echo "Done, you may now wish to reboot (further changes can be done by chrooting into /mnt)."
