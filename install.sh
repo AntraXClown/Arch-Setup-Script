@@ -109,15 +109,13 @@ sgdisk -g "${disk}"
 sgdisk -I -n 1:0:+512M -t 1:ef00 -c 1:'ESP' "${disk}"
 sgdisk -I -n 2:0:0 -c 2:'rootfs' "${disk}"
 
-ESP='/dev/disk/by-partlabel/ESP'
-
 ## Informing the Kernel of the changes
 output 'Informing the Kernel about the disk changes.'
 partprobe "${disk}"
 
 ## Formatting the ESP as FAT32
 output 'Formatting the EFI Partition as FAT32.'
-mkfs.fat -F 32 -s 2 "${ESP}"
+mkfs.fat -F 32 -s 2 '/dev/disk/by-partlabel/ESP'
 
 ## Formatting the partition as BTRFS
 output 'Formatting the rootfs as BTRFS.'
