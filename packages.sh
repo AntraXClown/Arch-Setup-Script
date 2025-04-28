@@ -16,7 +16,7 @@ PACKAGES=(
   gdu bat plocate alacritty fuzzel waybar otf-font-awesome
   nwg-look ripgrep fzf imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools luajit-tiktoken-bin lynx
-  prettier lolcat jp2a
+  prettier lolcat jp2a firefox
 
   # Bluetooth
   bluez bluez-utils
@@ -32,7 +32,7 @@ PACKAGES=(
   snapper-support
 
   # hyprland
-  hyprland-meta-git greetd-regreet
+  hyprland-meta-git sddm
 
   # meus apps aur
   pypi2aur hyprtiler hyprpwmenu hyprnav
