@@ -117,7 +117,7 @@ ESP=$(lsblk -no KNAME $disk | awk 'NR==2')
 echo "ESP Partition: ${ESP}"
 ## Formatting the ESP as FAT32
 output 'Formatting the EFI Partition as FAT32.'
-mkfs.fat -F 32 -s 2 $ESP
+mkfs.fat -F 32 -s 2 /dev/$ESP
 
 ### Formatting the partition as BTRFS
 #output 'Formatting the rootfs as BTRFS.'
