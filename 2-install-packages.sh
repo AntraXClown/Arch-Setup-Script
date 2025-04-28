@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
 source packages.sh
 
-paru -S "${PACKAGES[@]}"
-
+yay -S "${PACKAGES[@]}"
