@@ -242,10 +242,7 @@ sed -i 's/ part_msdos//g' /mnt/etc/default/grub
 
 ## Ensure correct GRUB settings
 echo '' >>/mnt/etc/default/grub
-echo '# Default to linux-zen
-GRUB_DEFAULT="1>2"
-
-# Booting with BTRFS subvolume
+echo '# Booting with BTRFS subvolume
 GRUB_BTRFS_OVERRIDE_BOOT_PARTITION_DETECTION=true' >>/mnt/etc/default/grub
 
 ## Disable root subvol pinning
