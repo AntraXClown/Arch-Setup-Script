@@ -16,7 +16,7 @@ PACKAGES=(
   gdu bat plocate alacritty fuzzel waybar otf-font-awesome
   nwg-look ripgrep fzf imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools luajit-tiktoken-bin lynx
-  prettier lolcat jp2a firefox pavucontrol evince
+  prettier lolcat jp2a firefox pavucontrol evince network-manager-applet
 
   # Bluetooth
   bluez bluez-utils
@@ -48,6 +48,9 @@ PACKAGES=(
 
   # nvidia
   # nvidia-container-toolkit nvidia-settings
+
+  # Drivers
+  vulkan-mesa-layers vulkan-radeon
 
   # Python
   uv python-pynvim python-virtualenv python-rich
