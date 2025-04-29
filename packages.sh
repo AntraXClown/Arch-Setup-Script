@@ -32,7 +32,7 @@ PACKAGES=(
   snapper-support
 
   # hyprland
-  hyprland-meta-git sddm
+  hyprland-meta-git sddm pyprland-git
 
   # meus apps aur
   pypi2aur hyprtiler hyprpwmenu hyprnav
