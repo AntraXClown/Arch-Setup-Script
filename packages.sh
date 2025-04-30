@@ -32,7 +32,8 @@ PACKAGES=(
   snapper-support btrfs-assistant
 
   # hyprland
-  hyprland-meta-git sddm pyprland-git
+  sddm pyprland-git hyprland hyprsysteminfo hyprpolkitagent hyprpicker
+  hyprpaper hyprlock hypridle hyprutils hyprpaper
 
   # meus apps aur
   pypi2aur hyprtiler hyprpwmenu hyprnav
@@ -57,5 +58,10 @@ PACKAGES=(
 
   # Android Development
   jdk-openjdk
+
+  # Looking-glass
+  cmake gcc libgl libegl fontconfig spice-protocol make nettle pkgconf binutils
+  libxi libxinerama libxss libxcursor libxpresent libxkbcommon wayland-protocols
+  ttf-dejavu libsamplerate
 
 )
