@@ -62,6 +62,6 @@ PACKAGES=(
   # Looking-glass
   cmake gcc libgl libegl fontconfig spice-protocol make nettle pkgconf binutils
   libxi libxinerama libxss libxcursor libxpresent libxkbcommon wayland-protocols
-  ttf-dejavu libsamplerate
+  ttf-dejavu libsamplerate dmidecode dkms
 
 )
