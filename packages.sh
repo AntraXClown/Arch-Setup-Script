@@ -34,7 +34,7 @@ PACKAGES=(
 
   # hyprland
   sddm pyprland-git hyprland hyprsysteminfo hyprpolkitagent hyprpicker
-  hyprpaper hyprlock hypridle hyprutils hyprpaper
+  hyprpaper hyprlock hypridle hyprutils hyprpaper xdg-desktop-portal-hyprland
 
   # meus apps aur
   pypi2aur hyprtiler hyprpwmenu hyprnav
