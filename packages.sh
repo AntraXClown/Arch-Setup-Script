@@ -29,7 +29,7 @@ PACKAGES=(
   solaar
 
   # btrfs
-  snapper-support
+  snapper-support btrfs-assistant
 
   # hyprland
   hyprland-meta-git sddm pyprland-git
