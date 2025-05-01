@@ -16,7 +16,7 @@ PACKAGES=(
   gdu bat plocate alacritty fuzzel waybar otf-font-awesome
   nwg-look ripgrep fzf imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools luajit-tiktoken-bin lynx
-  prettier lolcat jp2a firefox pavucontrol evince network-manager-applet
+  prettier lolcat jp2a firefox pavucontrol-qt-git evince network-manager-applet
   net-tools btop
 
   # Bluetooth
