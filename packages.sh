@@ -13,11 +13,11 @@ PACKAGES=(
   lazygit luarocks mpv nmap qalculate-gtk qbittorrent ueberzugpp vlc
   whatsdesk-bin xdo shfmt fisher cronie pyright ast-grep
   blueberry-wayland swappy grim wl-clipboard slurp copyq duf
-  gdu bat plocate alacritty fuzzel waybar otf-font-awesome
+  gdu bat plocate fuzzel waybar otf-font-awesome
   nwg-look ripgrep fzf imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools luajit-tiktoken-bin lynx
   prettier lolcat jp2a firefox pavucontrol-qt evince network-manager-applet
-  net-tools btop
+  net-tools btop ghostty
 
   # Bluetooth
   bluez bluez-utils
