@@ -51,9 +51,6 @@ PACKAGES=(
   # Development
   cmake visual-studio-code-bin
 
-  # nvidia
-  # nvidia-container-toolkit nvidia-settings
-
   # Drivers
   vulkan-mesa-layers vulkan-radeon
 
