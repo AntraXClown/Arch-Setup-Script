@@ -7,7 +7,6 @@ PACKAGES=(
   numix-gtk-theme-git papirus-icon-theme papirus-nord ttf-firacode
   ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
   noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd
-
   # Utils
   a2ln eza fastfetch kitty fd gdu gimp-git jamesdsp sublime-text-4 less
   lazygit luarocks mpv nmap qalculate-gtk qbittorrent ueberzugpp vlc
@@ -18,48 +17,35 @@ PACKAGES=(
   telegram-desktop dosfstools luajit-tiktoken-bin lynx
   prettier lolcat jp2a firefox pavucontrol-qt evince network-manager-applet
   net-tools btop ghostty
-
   # zsh
   zsh zoxide
-
   # Bluetooth
   bluez bluez-utils
-
   # Printer
   #
   cups cups-browsed
-
   # mouse mx master 3s
   solaar
-
   # btrfs
   snapper-support btrfs-assistant
-
   # hyprland
   sddm pyprland-git hyprland hyprsysteminfo hyprpolkitagent hyprpicker
   hyprpaper hyprlock hypridle hyprutils hyprpaper xdg-desktop-portal-hyprland
-
   # meus apps aur
   pypi2aur hyprtiler hyprpwmenu hyprnav
-
   # nemo filemanager
   nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter
   nemo-pastebin nemo-preview nemo-python nemo-seahorse
   nemo-share nemo-compare nemo-media-columns
   nemo-mediainfo-tab nemo-copypath nemo-webp-git
-
   # Development
   cmake visual-studio-code-bin
-
   # Drivers
   vulkan-mesa-layers vulkan-radeon
-
   # Python
   uv python-pynvim python-virtualenv python-rich
-
   # Android Development
   jdk-openjdk
-
   # Looking-glass
   cmake gcc libgl libegl fontconfig spice-protocol make nettle pkgconf binutils
   libxi libxinerama libxss libxcursor libxpresent libxkbcommon wayland-protocols
