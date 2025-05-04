@@ -18,7 +18,7 @@ PACKAGES=(
   prettier lolcat jp2a firefox pavucontrol-qt evince network-manager-applet
   net-tools btop ghostty wget
   # zsh
-  zsh zoxide
+  zsh zoxide the_silver_searcher
   # Bluetooth
   bluez bluez-utils
   # Printer
