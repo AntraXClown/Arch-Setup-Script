@@ -24,6 +24,7 @@ PACKAGES=(
   bluez bluez-utils
   # Printer
   cups cups-browsed
+
   # mouse mx master 3s
   solaar
   # btrfs
