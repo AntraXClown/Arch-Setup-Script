@@ -24,9 +24,11 @@ PACKAGES=(
   bluez bluez-utils
   # Printer
   cups cups-browsed
-  # teste
   # mouse mx master 3s
   solaar
+
+  # neovim
+  neovim-git
 
   # btrfs
   snapper-support btrfs-assistant
