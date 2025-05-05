@@ -10,7 +10,7 @@ PACKAGES=(
   # Utils
   a2ln eza fastfetch kitty fd gdu gimp-git jamesdsp sublime-text-4 less
   lazygit luarocks mpv nmap qalculate-gtk qbittorrent ueberzugpp vlc
-  whatsdesk-bin xdo shfmt fisher cronie pyright ast-grep
+  whatsdesk-bin xdo shfmt fisher cronie pyright
   blueberry-wayland swappy grim wl-clipboard slurp copyq duf
   gdu bat plocate fuzzel waybar otf-font-awesome
   nwg-look ripgrep fzf imagemagick swaync yt-dlp kdenlive
