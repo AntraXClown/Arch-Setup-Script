@@ -7,6 +7,7 @@ PACKAGES=(
   numix-gtk-theme-git papirus-icon-theme papirus-nord ttf-firacode
   ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
   noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd
+  ttf-inconsolata-nerd
   # Utils
   #
   a2ln eza fastfetch kitty fd gdu gimp-git jamesdsp sublime-text-4 less
