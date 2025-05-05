@@ -26,10 +26,8 @@ PACKAGES=(
   cups cups-browsed
   # mouse mx master 3s
   solaar
-
   # neovim
   neovim-git
-
   # btrfs
   snapper-support btrfs-assistant
   # hyprland
