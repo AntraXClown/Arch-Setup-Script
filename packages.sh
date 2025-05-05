@@ -18,7 +18,9 @@ PACKAGES=(
   nwg-look ripgrep fzf imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools luajit-tiktoken-bin lynx
   prettier lolcat jp2a firefox pavucontrol-qt evince network-manager-applet
-  net-tools btop ghostty wget 7zip stow
+  net-tools btop wget 7zip stow
+  # ghosttty
+  zig-bin ghostty-git-zen3
   # zsh
   zsh zoxide the_silver_searcher yazi-git tmux tmux-plugin-manager
   # Bluetooth
