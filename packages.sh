@@ -8,6 +8,7 @@ PACKAGES=(
   ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
   noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd
   # Utils
+  #
   a2ln eza fastfetch kitty fd gdu gimp-git jamesdsp sublime-text-4 less
   lazygit luarocks mpv nmap qalculate-gtk qbittorrent ueberzugpp vlc
   whatsdesk-bin xdo shfmt fisher cronie pyright
@@ -22,7 +23,6 @@ PACKAGES=(
   # Bluetooth
   bluez bluez-utils
   # Printer
-  #
   cups cups-browsed
   # mouse mx master 3s
   solaar
