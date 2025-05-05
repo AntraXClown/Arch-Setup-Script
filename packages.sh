@@ -24,9 +24,10 @@ PACKAGES=(
   bluez bluez-utils
   # Printer
   cups cups-browsed
-
+  # teste
   # mouse mx master 3s
   solaar
+
   # btrfs
   snapper-support btrfs-assistant
   # hyprland
