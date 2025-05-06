@@ -48,7 +48,7 @@ PACKAGES=(
   # Drivers
   vulkan-mesa-layers vulkan-radeon
   # Python
-  uv python-pynvim python-virtualenv python-rich
+  uv python-pynvim python-virtualenv python-rich python-inquirerpy
   # Android Development
   jdk-openjdk
   # Looking-glass
