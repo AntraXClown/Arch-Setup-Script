@@ -49,6 +49,7 @@ PACKAGES=(
   vulkan-mesa-layers vulkan-radeon
   # Python
   uv python-pynvim python-virtualenv python-rich python-inquirerpy
+  python-black
   # Android Development
   jdk-openjdk
   # Looking-glass
