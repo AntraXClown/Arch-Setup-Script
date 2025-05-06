@@ -20,7 +20,7 @@ PACKAGES=(
   prettier lolcat jp2a firefox pavucontrol-qt evince network-manager-applet
   net-tools btop wget 7zip stow
   # ghosttty
-  zig-bin ghostty-git-zen3
+  ghostty
   # zsh
   zsh zoxide the_silver_searcher yazi-git tmux tmux-plugin-manager
   # Bluetooth
