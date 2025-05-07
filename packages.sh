@@ -39,7 +39,7 @@ PACKAGES=(
   ##########################################################################################
   # neovim
   ##########################################################################################
-  neovim-git ast-grep-bin lazygit luarocks shfmt pyright
+  neovim ast-grep-bin lazygit luarocks shfmt pyright
   ripgrep fzf luajit-tiktoken-bin luajit-tiktoken-bin
   prettier lolcat jp2a
   ##########################################################################################
