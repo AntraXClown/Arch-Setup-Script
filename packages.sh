@@ -30,7 +30,7 @@ PACKAGES=(
   # mouse mx master 3s
   solaar
   # neovim
-  neovim-git
+  neovim-git ast-grep-bin
   # btrfs
   snapper-support btrfs-assistant
   # hyprland
