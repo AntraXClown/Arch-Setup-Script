@@ -3,23 +3,19 @@ PACKAGES=(
   ##########################################################################################
   # Themes, Cursors and Fonts
   ##########################################################################################
-  arc-darkest-theme-git dracula-cursors-git kvantum-theme-materia
-  numix-gtk-theme-git papirus-icon-theme papirus-nord ttf-firacode
+  arc-darkest-theme-git numix-gtk-theme-git papirus-icon-theme
   ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
-  noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd
-  ttf-inconsolata-nerd
+  noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd vimix-cursors
+  otf-font-awesome
   ##########################################################################################
   # Utils
   ##########################################################################################
-  a2ln eza fastfetch kitty fd gdu gimp-git jamesdsp sublime-text-4 less
-  lazygit luarocks mpv nmap qalculate-gtk qbittorrent ueberzugpp vlc
-  zapzap xdo shfmt fisher cronie pyright
+  a2ln eza fastfetch kitty fd gdu gimp-git jamesdsp less mpv nmap
+  qalculate-gtk qbittorrent ueberzugpp vlc zapzap cronie
   blueberry-wayland swappy grim wl-clipboard slurp copyq duf
-  gdu bat plocate fuzzel waybar otf-font-awesome
-  nwg-look ripgrep fzf imagemagick swaync yt-dlp kdenlive
-  telegram-desktop dosfstools luajit-tiktoken-bin lynx
-  prettier lolcat jp2a firefox pavucontrol-qt evince network-manager-applet
-  net-tools btop wget 7zip stow
+  gdu bat fuzzel waybar nwg-look imagemagick swaync yt-dlp kdenlive
+  telegram-desktop dosfstools firefox pavucontrol-qt
+  evince network-manager-applet net-tools btop wget 7zip stow
   ##########################################################################################
   # foot (terminal)
   ##########################################################################################
@@ -43,7 +39,9 @@ PACKAGES=(
   ##########################################################################################
   # neovim
   ##########################################################################################
-  neovim-git ast-grep-bin
+  neovim-git ast-grep-bin lazygit luarocks shfmt pyright
+  ripgrep fzf luajit-tiktoken-bin luajit-tiktoken-bin
+  prettier lolcat jp2a
   ##########################################################################################
   # btrfs
   ##########################################################################################
