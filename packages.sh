@@ -16,7 +16,7 @@ PACKAGES=(
   gdu bat fuzzel waybar nwg-look imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools firefox pavucontrol-qt
   evince network-manager-applet net-tools btop wget 7zip stow
-  entr
+  entr rustdesk-bin
   ##########################################################################################
   # foot (terminal)
   ##########################################################################################
@@ -73,7 +73,7 @@ PACKAGES=(
   # Python
   ##########################################################################################
   uv python-pynvim python-virtualenv python-rich python-inquirerpy
-  python-black python-pip
+  python-black python-pip python-pyfiglet
   ##########################################################################################
   # Android Development
   ##########################################################################################
