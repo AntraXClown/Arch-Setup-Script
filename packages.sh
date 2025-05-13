@@ -6,7 +6,7 @@ PACKAGES=(
   arc-darkest-theme-git numix-gtk-theme-git papirus-icon-theme
   ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
   noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd vimix-cursors
-  otf-font-awesome
+  otf-font-awesome ttf-nerd-fonts-symbols-mono
   ##########################################################################################
   # Utils
   ##########################################################################################
@@ -16,7 +16,7 @@ PACKAGES=(
   gdu bat fuzzel waybar nwg-look imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools firefox pavucontrol-qt
   evince network-manager-applet net-tools btop wget 7zip stow
-  entr ristretto librewolf-bin
+  entr ristretto librewolf-bin wezterm
   ##########################################################################################
   # foot (terminal)
   ##########################################################################################
