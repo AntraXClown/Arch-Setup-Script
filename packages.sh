@@ -36,9 +36,9 @@ PACKAGES=(
   ##########################################################################################
   # neovim
   ##########################################################################################
-  neovim ast-grep-bin lazygit luarocks shfmt pyright
+  neovim-git ast-grep-bin lazygit luarocks shfmt pyright
   ripgrep fzf luajit-tiktoken-bin luajit-tiktoken-bin
-  prettier lolcat jp2a
+  prettier lolcat jp2a tree-sitter-python tree-sitter-bash
   ##########################################################################################
   # btrfs
   ##########################################################################################
