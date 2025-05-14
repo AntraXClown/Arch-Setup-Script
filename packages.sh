@@ -41,7 +41,7 @@ PACKAGES=(
   prettier lolcat jp2a tree-sitter tree-sitter-c tree-sitter-vim
   tree-sitter-lua tree-sitter-cli tree-sitter-rust tree-sitter-bash
   tree-sitter-query tree-sitter-python tree-sitter-vimdoc
-  tree-sitter-markdown tree-sitter-javascript
+  tree-sitter-markdown tree-sitter-javascript fish
   ##########################################################################################
   # btrfs
   ##########################################################################################
