@@ -42,7 +42,7 @@ PACKAGES=(
   tree-sitter-lua tree-sitter-cli tree-sitter-rust tree-sitter-bash
   tree-sitter-query tree-sitter-python tree-sitter-vimdoc
   tree-sitter-markdown tree-sitter-javascript fish
-  markdownlint-cli2
+  markdownlint-cli2 lynx
   ##########################################################################################
   # btrfs
   ##########################################################################################
