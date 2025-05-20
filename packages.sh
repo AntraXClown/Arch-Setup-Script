@@ -37,7 +37,7 @@ PACKAGES=(
   # neovim
   ##########################################################################################
   neovim-git lazygit luarocks shfmt pyright
-  ripgrep fzf prettier lolcat jp2a fish lynx
+  ripgrep fzf prettier lolcat jp2a fish lynx tectonic
   ##########################################################################################
   # btrfs
   ##########################################################################################
