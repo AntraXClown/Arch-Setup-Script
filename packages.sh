@@ -38,7 +38,7 @@ PACKAGES=(
   ##########################################################################################
   neovim-git lazygit luarocks shfmt pyright
   ripgrep fzf prettier lolcat jp2a fish lynx tectonic
-  composer php github-cli
+  composer php github-cli python-pygobject-stubs
   ##########################################################################################
   # btrfs
   ##########################################################################################
