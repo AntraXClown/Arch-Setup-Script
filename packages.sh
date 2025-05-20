@@ -37,12 +37,7 @@ PACKAGES=(
   # neovim
   ##########################################################################################
   neovim-git lazygit luarocks shfmt pyright
-  ripgrep fzf luajit-tiktoken-bin prettier lolcat
-  jp2a tree-sitter tree-sitter-c tree-sitter-vim
-  tree-sitter-lua tree-sitter-cli tree-sitter-rust tree-sitter-bash
-  tree-sitter-query tree-sitter-python tree-sitter-vimdoc
-  tree-sitter-markdown tree-sitter-javascript fish
-  markdownlint-cli2 lynx
+  ripgrep fzf prettier lolcat jp2a fish lynx
   ##########################################################################################
   # btrfs
   ##########################################################################################
