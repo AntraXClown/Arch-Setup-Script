@@ -6,7 +6,8 @@ PACKAGES=(
   arc-darkest-theme-git numix-gtk-theme-git papirus-icon-theme
   ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
   noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd vimix-cursors
-  otf-font-awesome ttf-nerd-fonts-symbols-mono
+  otf-font-awesome ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
+  ttf-font-awesome
   ##########################################################################################
   # Utils
   ##########################################################################################
