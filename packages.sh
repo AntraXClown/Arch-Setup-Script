@@ -70,7 +70,7 @@ PACKAGES=(
   # Python
   ##########################################################################################
   uv python-pynvim python-virtualenv python-rich python-inquirerpy
-  python-black python-pip python-pyfiglet
+  python-black python-pip python-pyfiglet python-pynvml
   ##########################################################################################
   # Android Development
   ##########################################################################################
