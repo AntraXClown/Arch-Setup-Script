@@ -17,7 +17,7 @@ PACKAGES=(
   gdu bat fuzzel waybar nwg-look imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools firefox pavucontrol-qt
   evince network-manager-applet net-tools btop wget 7zip stow
-  entr ristretto man-db man-pages tldr cava
+  entr ristretto man-db man-pages tldr cava rsync
   ##########################################################################################
   # zsh
   ##########################################################################################
