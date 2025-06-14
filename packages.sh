@@ -5,10 +5,11 @@ PACKAGES=(
   ##########################################################################################
   arc-darkest-theme-git numix-gtk-theme-git papirus-icon-theme
   ttf-hack-nerd awesome-terminal-fonts noto-fonts noto-fonts-extra
-  noto-fonts-emoji noto-fonts-cjk ttf-firacode-nerd vimix-cursors
-  otf-font-awesome ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
+  noto-fonts-emoji noto-fonts-cjk vimix-cursors otf-font-awesome
+  ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
   ttf-font-awesome ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-ubuntu-mono-nerd
   ttf-dejavu ttf-liberation adobe-source-sans-fonts ttf-droid
+  ttf-firacode-nerd
   ##########################################################################################
   # Utils
   ##########################################################################################
