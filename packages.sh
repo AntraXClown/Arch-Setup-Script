@@ -7,7 +7,7 @@ PACKAGES=(
   ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
   noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd vimix-cursors
   otf-font-awesome ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
-  ttf-font-awesome
+  ttf-font-awesome ttf-jetbrains-mono-nerd
   ##########################################################################################
   # Utils
   ##########################################################################################
