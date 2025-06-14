@@ -4,10 +4,11 @@ PACKAGES=(
   # Themes, Cursors and Fonts
   ##########################################################################################
   arc-darkest-theme-git numix-gtk-theme-git papirus-icon-theme
-  ttf-hack-nerd awesome-terminal-fonts noto-fonts-emoji
-  noto-fonts-extra noto-fonts-cjk ttf-firacode-nerd vimix-cursors
+  ttf-hack-nerd awesome-terminal-fonts noto-fonts noto-fonts-extra
+  noto-fonts-emoji noto-fonts-cjk ttf-firacode-nerd vimix-cursors
   otf-font-awesome ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
   ttf-font-awesome ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-ubuntu-mono-nerd
+  ttf-dejavu ttf-liberation adobe-source-sans-fonts ttf-droid
   ##########################################################################################
   # Utils
   ##########################################################################################
@@ -81,5 +82,5 @@ PACKAGES=(
   ##########################################################################################
   cmake gcc libgl libegl fontconfig spice-protocol make nettle pkgconf binutils
   libxi libxinerama libxss libxcursor libxpresent libxkbcommon wayland-protocols
-  ttf-dejavu libsamplerate dmidecode dkms looking-glass
+  libsamplerate dmidecode dkms looking-glass
 )
