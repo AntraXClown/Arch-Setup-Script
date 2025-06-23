@@ -19,7 +19,11 @@ PACKAGES=(
   gdu bat fuzzel waybar nwg-look imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools firefox pavucontrol-qt
   evince network-manager-applet net-tools btop wget 7zip stow
-  entr ristretto man-db man-pages tldr cava rsync swaybg
+  entr ristretto man-db man-pages tldr cava rsync swaybg swayidle
+  ##########################################################################################
+  # niri
+  ##########################################################################################
+  niri
   ##########################################################################################
   # zsh
   ##########################################################################################
@@ -50,12 +54,15 @@ PACKAGES=(
   ##########################################################################################
   # hyprland
   ##########################################################################################
-  sddm pyprland-git hyprland hyprsysteminfo hyprpolkitagent hyprpicker
-  hyprpaper hyprlock hypridle hyprutils hyprpaper xdg-desktop-portal-hyprland
+  # sddm hyprland hyprsysteminfo hyprpolkitagent hyprpicker
+  # hyprpaper hyprlock hypridle hyprutils hyprpaper xdg-desktop-portal-hyprland
   ##########################################################################################
   # meus apps aur
   ##########################################################################################
-  pypi2aur hyprtiler hyprpwmenu hyprnav
+  pypi2aur
+  # hyprtiler
+  # hyprpwmenu
+  # hyprnav
   ##########################################################################################
   # nemo filemanager
   ##########################################################################################
@@ -81,7 +88,7 @@ PACKAGES=(
   ##########################################################################################
   # Looking-glass
   ##########################################################################################
-  cmake gcc libgl libegl fontconfig spice-protocol make nettle pkgconf binutils
-  libxi libxinerama libxss libxcursor libxpresent libxkbcommon wayland-protocols
-  libsamplerate dmidecode dkms looking-glass
+  # cmake gcc libgl libegl fontconfig spice-protocol make nettle pkgconf binutils
+  # libxi libxinerama libxss libxcursor libxpresent libxkbcommon wayland-protocols
+  # libsamplerate dmidecode dkms looking-glass
 )
