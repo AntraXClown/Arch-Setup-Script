@@ -50,21 +50,9 @@ PACKAGES=(
   ripgrep fzf prettier lolcat jp2a fish lynx tectonic
   composer php github-cli python-pygobject-stubs lua51
   ##########################################################################################
-  # btrfs
-  ##########################################################################################
-  snapper-support btrfs-assistant
-  ##########################################################################################
-  # hyprland
-  ##########################################################################################
-  # sddm hyprland hyprsysteminfo hyprpolkitagent hyprpicker
-  # hyprpaper hyprlock hypridle hyprutils hyprpaper xdg-desktop-portal-hyprland
-  ##########################################################################################
   # meus apps aur
   ##########################################################################################
   pypi2aur
-  # hyprtiler
-  # hyprpwmenu
-  # hyprnav
   ##########################################################################################
   # nemo filemanager
   ##########################################################################################
@@ -88,9 +76,4 @@ PACKAGES=(
   ##########################################################################################
   jdk-openjdk
   ##########################################################################################
-  # Looking-glass
-  ##########################################################################################
-  # cmake gcc libgl libegl fontconfig spice-protocol make nettle pkgconf binutils
-  # libxi libxinerama libxss libxcursor libxpresent libxkbcommon wayland-protocols
-  # libsamplerate dmidecode dkms looking-glass
 )
