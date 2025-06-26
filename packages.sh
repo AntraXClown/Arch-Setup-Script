@@ -20,7 +20,7 @@ PACKAGES=(
   telegram-desktop dosfstools firefox pavucontrol-qt
   evince network-manager-applet net-tools btop wget 7zip stow
   entr ristretto man-db man-pages tldr cava rsync swaybg swayidle
-  legcord
+  legcord nfs-utils
   ##########################################################################################
   # niri
   ##########################################################################################
