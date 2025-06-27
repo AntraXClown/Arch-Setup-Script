@@ -14,13 +14,14 @@ PACKAGES=(
   # Utils
   ##########################################################################################
   a2ln eza fastfetch kitty fd gdu gimp-git jamesdsp less mpv nmap
-  qalculate-gtk qbittorrent ueberzugpp vlc zapzap cronie
+  qalculate-gtk qbittorrent ueberzugpp vlc cronie
   blueberry-wayland swappy grim wl-clipboard slurp copyq duf
   gdu bat fuzzel waybar nwg-look imagemagick swaync yt-dlp kdenlive
   telegram-desktop dosfstools firefox pavucontrol-qt
   evince network-manager-applet net-tools btop wget 7zip stow
   entr ristretto man-db man-pages tldr cava rsync swaybg swayidle
   legcord nfs-utils xorg-xhost nvidia-settings kvantum gtk4-layer-shell
+  whatsapp-for-linux
   ##########################################################################################
   # niri
   ##########################################################################################
