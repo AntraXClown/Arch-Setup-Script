@@ -9,7 +9,7 @@ PACKAGES=(
   ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
   ttf-font-awesome ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-ubuntu-mono-nerd
   ttf-dejavu ttf-liberation adobe-source-sans-fonts ttf-droid
-  ttf-firacode-nerd ttf-ms-fonts
+  ttf-firacode-nerd 
   ##########################################################################################
   # Utils
   ##########################################################################################
@@ -20,7 +20,7 @@ PACKAGES=(
   telegram-desktop dosfstools firefox pavucontrol-qt
   evince network-manager-applet net-tools btop wget 7zip stow
   entr ristretto man-db man-pages tldr cava rsync swaybg swayidle
-  legcord nfs-utils xorg-xhost nvidia-settings kvantum gtk4-layer-shell
+  legcord nfs-utils xorg-xhost kvantum gtk4-layer-shell
   whatsapp-for-linux ethtool
   ##########################################################################################
   # niri
@@ -72,7 +72,7 @@ PACKAGES=(
   # Python
   ##########################################################################################
   uv python-pynvim python-virtualenv python-rich python-inquirerpy
-  python-black python-pip python-pyfiglet python-pynvml
+  python-black python-pip python-pyfiglet
   ##########################################################################################
   # Android Development
   ##########################################################################################
