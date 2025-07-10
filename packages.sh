@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+e/usr/bin/env bash
 PACKAGES=(
   ##########################################################################################
   # Themes, Cursors and Fonts
@@ -21,7 +21,7 @@ PACKAGES=(
   evince network-manager-applet net-tools btop wget 7zip stow
   entr ristretto man-db man-pages tldr cava rsync swaybg swayidle
   legcord nfs-utils xorg-xhost kvantum gtk4-layer-shell
-  whatsapp-for-linux ethtool
+  whatsapp-for-linux ethtool reflector
   ##########################################################################################
   # niri
   ##########################################################################################
