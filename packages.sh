@@ -9,7 +9,7 @@ PACKAGES=(
   ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
   ttf-font-awesome ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-ubuntu-mono-nerd
   ttf-dejavu ttf-liberation adobe-source-sans-fonts ttf-droid
-  ttf-firacode-nerd 
+  ttf-firacode-nerd
   ##########################################################################################
   # Utils
   ##########################################################################################
@@ -26,7 +26,7 @@ PACKAGES=(
   # niri
   ##########################################################################################
   niri xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring
-  xwayland-satellite 
+  xwayland-satellite
   ##########################################################################################
   # Minhas apps
   ##########################################################################################
@@ -54,7 +54,7 @@ PACKAGES=(
   neovim-git lazygit luarocks shfmt pyright
   ripgrep fzf prettier lolcat jp2a fish lynx tectonic
   composer php github-cli python-pygobject-stubs lua51
-  julia
+  julia ast-grep
   ##########################################################################################
   # meus apps aur
   ##########################################################################################
