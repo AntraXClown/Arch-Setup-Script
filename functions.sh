@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# Edit /etc/mkinitcpio.conf
-editMkinitcpio() {
-  sudo sed -i 's/^MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
-  sudo mkinitcpio -P
-}
-
 # Function install libvirt and start service virt-manager qemu
 installLibvirt() {
   sudo pacman -S libvirt dnsmasq qemu-desktop virt-manager
@@ -80,48 +74,6 @@ installReflector() {
   sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
   sudo systemctl enable reflector.service
   sudo systemctl start reflector.service
-}
-
-# Install docker and start service
-installDocker() {
-  paru -S docker docker-compose docker-buildx
-  sudo systemctl enable --now docker.service
-  sudo usermod -aG docker "$USER"
-
-  sudo mkdir -p /etc/docker
-  echo '{"hosts": ["tcp://0.0.0.0:2375", "unix:///var/run/docker.sock"]}' | sudo tee /etc/docker/daemon.json >/dev/null
-  sudo mkdir -p /etc/systemd/system/docker.service.d
-  echo -e "[Service]\nExecStart=\nExecStart=/usr/bin/dockerd" | sudo tee /etc/systemd/system/docker.service.d/override.conf >/dev/null
-
-  sudo systemctl daemon-reload
-  sudo systemctl restart docker.service
-  sudo nvidia-ctk runtime configure --runtime=docker
-  sudo systemctl restart docker.service
-
-}
-
-# Install fisher-ai and plugins
-installFisherPlugins() {
-  # nvm.fish
-  fisher install jorgebucaran/nvm.fish
-  # fish.ai
-  fisher install realiserad/fish-ai
-}
-
-# Function to change shell to fish
-changeShell() {
-  chsh -s /usr/bin/fish "$USER"
-}
-
-# the latest version of nodejs
-installNodejs() {
-  nvm install latest
-  set --universal nvm_default_version latest
-}
-
-# install bun
-installBun() {
-  curl -fsSL https://bun.sh/install | bash
 }
 
 #enable chaotic aur
