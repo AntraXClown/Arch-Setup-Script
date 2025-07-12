@@ -53,7 +53,7 @@ PACKAGES=(
   neovim-git lazygit luarocks shfmt pyright
   ripgrep fzf prettier lolcat jp2a fish lynx tectonic
   composer php github-cli python-pygobject-stubs lua51
-  julia ast-grep
+  julia ast-grep viu
   ##########################################################################################
   # meus apps aur
   ##########################################################################################
