@@ -1,4 +1,4 @@
-e/usr/bin/env bash
+#!/usr/bin/env bash
 PACKAGES=(
   ##########################################################################################
   # Themes, Cursors and Fonts
@@ -22,7 +22,7 @@ PACKAGES=(
   entr ristretto man-db man-pages tldr cava rsync swaybg swayidle
   legcord nfs-utils xorg-xhost kvantum gtk4-layer-shell
   whatsapp-for-linux ethtool reflector calibre netbird
-  udiskie amdgpu_top
+  udiskie amdgpu_top better-control-git
   ##########################################################################################
   # niri
   ##########################################################################################
