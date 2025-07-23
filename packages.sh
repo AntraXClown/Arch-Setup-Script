@@ -9,7 +9,7 @@ PACKAGES=(
   ttf-nerd-fonts-symbols-mono ttf-cascadia-code-nerd
   ttf-font-awesome ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-ubuntu-mono-nerd
   ttf-dejavu ttf-liberation adobe-source-sans-fonts ttf-droid
-  ttf-firacode-nerd polkit-kde-agent
+  ttf-firacode-nerd polkit-kde-agent tokyonight-gtk-theme-git
   ##########################################################################################
   # Utils
   ##########################################################################################
