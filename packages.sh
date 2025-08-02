@@ -23,6 +23,7 @@ PACKAGES=(
   legcord nfs-utils xorg-xhost kvantum gtk4-layer-shell
   zapzap ethtool reflector calibre netbird nvme-cli
   udiskie amdgpu_top better-control-git reflector-simple
+  qt5ct qt6ct
   ##########################################################################################
   # niri
   ##########################################################################################
